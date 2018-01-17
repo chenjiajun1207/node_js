@@ -1,0 +1,1 @@
+对于js_test.js中load的cb可以理解为golang中 interface{}也就是任意类型
