@@ -7,12 +7,12 @@ var selectData = function(database, callback) {
     var tt=myAwesomeDB.collection('foo');
     //查询数据
     var whereStr = {
-        "name": 'node'
+        "bar": '123'
     };
-    tt.find(whereStr,function(error, cursor) {
-        cursor.each(function(error, doc) {
+    tt.find(whereStr,function(error, result) {
+        result.each(function(error, doc) {
             if (doc) {
-                //console.log(doc);
+                console.log(doc);
                 if (doc.addTime) {
                     console.log("addTime: " + doc.addTime);
                 }
